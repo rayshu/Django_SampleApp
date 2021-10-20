@@ -1,3 +1,4 @@
-{% for i in users_list %}     
-    <a href="{{ i.userid }}/">{{i.userid}}</a>
+{% for user in users_list %}     
+    <li><a href="{{ user.userid }}/">{{user.name}}</a></li>
 {% endfor %}
+<button><a href="register/">Register New User</a></button>
